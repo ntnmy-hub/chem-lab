@@ -56,18 +56,18 @@ const reactions = {
 
   // ===== MUỐI + MUỐI =====
   "AgNO3+NaCl": { text: "AgCl ↓", color: "#ffffff" },
-  "AgNO3+BaCl2": { text: "⬇️ AgCl ↓ + Ba(NO3)2", color: "#ffffff" },
-  "BaCl2+Na2SO4": { text: "⬇️ BaSO4 ↓", color: "#eeeeee" },
-  "CuCl2+NaOH": { text: "⬇️ Cu(OH)2 ↓", color: "#66ccff" },
+  "AgNO3+BaCl2": { text: "AgCl ↓ + Ba(NO3)2", color: "#ffffff" },
+  "BaCl2+Na2SO4": { text: "BaSO4 ↓", color: "#eeeeee" },
+  "CuCl2+NaOH": { text: "Cu(OH)2 ↓", color: "#66ccff" },
 
   // ===== MUỐI + BASE =====
-  "FeCl2+NaOH": { text: "⬇️ Fe(OH)2 ↓", color: "#66ff66" },
+  "FeCl2+NaOH": { text: "Fe(OH)2 ↓", color: "#66ff66" },
   "CuSO4+Ba(OH)2": { text: "⬇️⬇️ Cu(OH)2 + BaSO4", color: "#66ccff" },
-  "CuSO4+NaOH": { text: "⬇️ Cu(OH)2 ↓", color: "#66ccff" },
-  "Ba(OH)2+Na2SO4": { text: "⬇️ BaSO4 ↓ + 2NaOH", color: "#ffffff" },
-  "Ba(OH)2+FeCl2": { text: "⬇️ Fe(OH)2 ↓ + BaCl2", color: "#66ff66" },
-  "Ba(OH)2+CuCl2": { text: "⬇️ Cu(OH)2 ↓ + BaCl2", color: "#66ccff" },
-  "CuCl2+NaOH": { text: "⬇️ Cu(OH)2 ↓ + 2NaCl", color: "#66ccff" },
+  "CuSO4+NaOH": { text: "Cu(OH)2 ↓", color: "#66ccff" },
+  "Ba(OH)2+Na2SO4": { text: "BaSO4 ↓ + 2NaOH", color: "#ffffff" },
+  "Ba(OH)2+FeCl2": { text: "Fe(OH)2 ↓ + BaCl2", color: "#66ff66" },
+  "Ba(OH)2+CuCl2": { text: "Cu(OH)2 ↓ + BaCl2", color: "#66ccff" },
+  "CuCl2+NaOH": { text: "Cu(OH)2 ↓ + 2NaCl", color: "#66ccff" },
 
 };
 
