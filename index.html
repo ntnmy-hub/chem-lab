@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<title>THÍ NGHIỆM HÓA HỌC</title>
+<!--custom css-->
+<link rel="stylesheet" href="css/styles.css">
+<!--custom js-->
+<script src="js/scripts.js"></script>
+
+</head>
+<body>
+
+<div id="welcome">
+  <h1>🧪 PHÒNG THÍ NGHIỆM HÓA HỌC</h1>
+  <p>Giúp bạn hiểu phản ứng hóa học một cách trực quan</p>
+  <button onclick="start()">Bắt đầu</button>
+</div>
+
+<div id="lab">
+  <h2>Chọn 2 chất để phản ứng</h2>
+
+  <div id="main">
+
+    <!-- LEFT -->
+    <div id="left">
+      <div id="table">
+        <div class="beaker">
+          <div class="liquid"></div>
+        </div>
+      </div>
+
+      <div id="result">Kết quả: ...</div>
+    </div>
+
+    <!-- RIGHT -->
+    <div id="right">
+
+      <div class="section">
+        <h3 onclick="toggleGroup(this)">🎨 Chất chỉ thị</h3>
+        <div class="group">
+          <div class="flask" onclick="select(this,'Quỳ tím')"><span>Quỳ tím</span></div>
+          <div class="flask" onclick="select(this,'Phenolphtalein')"><span>Phenolphtalein</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 onclick="toggleGroup(this)">🧪 Acid</h3>
+        <div class="group">
+          <div class="flask" onclick="select(this,'CH3COOH')"><span>CH3COOH</span></div>
+          <div class="flask" onclick="select(this,'HCl')"><span>HCl</span></div>
+          <div class="flask" onclick="select(this,'H2SO4')"><span>H2SO4</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 onclick="toggleGroup(this)">🧪 Base</h3>
+        <div class="group">
+          <div class="flask" onclick="select(this,'NaOH')"><span>NaOH</span></div>
+          <div class="flask" onclick="select(this,'Ba(OH)2')"><span>Ba(OH)2</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 onclick="toggleGroup(this)">🔩 Kim loại</h3>
+        <div class="group">
+          <div class="flask" onclick="select(this,'Na')"><span>Na</span></div>
+          <div class="flask" onclick="select(this,'K')"><span>K</span></div>
+          <div class="flask" onclick="select(this,'Al')"><span>Al</span></div>
+          <div class="flask" onclick="select(this,'Zn')"><span>Zn</span></div>
+          <div class="flask" onclick="select(this,'Mg')"><span>Mg</span></div>
+          <div class="flask" onclick="select(this,'Fe')"><span>Fe</span></div>
+          <div class="flask" onclick="select(this,'Cu')"><span>Cu</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 onclick="toggleGroup(this)">🧂 Muối</h3>
+        <div class="group">
+          <div class="flask" onclick="select(this,'AgNO3')"><span>AgNO3</span></div>
+          <div class="flask" onclick="select(this,'NaCl')"><span>NaCl</span></div>
+          <div class="flask" onclick="select(this,'BaCl2')"><span>BaCl2</span></div>
+          <div class="flask" onclick="select(this,'Na2SO4')"><span>Na2SO4</span></div>
+          <div class="flask" onclick="select(this,'Na2CO3')"><span>Na2CO3</span></div>
+          <div class="flask" onclick="select(this,'FeCl2')"><span>FeCl2</span></div>
+          <div class="flask" onclick="select(this,'CuSO4')"><span>CuSO4</span></div>
+          <div class="flask" onclick="select(this,'CuCl2')"><span>CuCl2</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ICON BAY -->
+<div class="bg-icons">
+    <span style="left:10%; animation-delay:0s;">🧪</span>
+    <span style="left:30%; animation-delay:2s;">⚗️</span>
+    <span style="left:50%; animation-delay:4s;">💧</span>
+    <span style="left:70%; animation-delay:1s;">✨</span>
+    <span style="left:85%; animation-delay:3s;">🧪</span>
+</div>
