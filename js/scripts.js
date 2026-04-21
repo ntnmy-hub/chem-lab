@@ -27,8 +27,9 @@ const reactions = {
   "Zn+H2SO4": { text: "💨 ZnSO4 + H2 ↑", gas: true },
   "Fe+H2SO4": { text: "💨 FeSO4 + H2 ↑", gas: true },
   "Mg+H2SO4": { text: "💨 MgSO4 + H2 ↑", gas: true },
-
-  // ===== KIM LOẠI + CH3COOH =====
+  "Al+H2SO4": { text: "💨 Al2(SO4)3 + 3H2 ↑", gas: true },
+  "K+H2SO4": { text: "💥 K2SO4 + H2 ↑", gas: true },
+  "Na+H2SO4": { text: "💥 Na2SO4 + H2 ↑", gas: true },
   "Zn+CH3COOH": { text: "💨 Zn(CH3COO)2 + H2 ↑", gas: true },
   "Fe+CH3COOH": { text: "💨 Fe(CH3COO)2 + H2 ↑", gas: true },
   "Mg+CH3COOH": { text: "💨 Mg(CH3COO)2 + H2 ↑", gas: true },
@@ -41,25 +42,47 @@ const reactions = {
   "K+H2O": { text: "KOH + H2 ↑ (rất mạnh)", gas: true },
 
   // ===== KIM LOẠI + MUỐI =====
-  "Fe+CuCl2": { text: "🧱 FeCl2 + Cu" },
-  "Zn+CuSO4": { text: "🧱 ZnSO4 + Cu" },
   "Fe+AgNO3": { text: "🧱 Fe(NO3)2 + Ag" },
   "Zn+AgNO3": { text: "🧱 Zn(NO3)2 + Ag" },
   "Mg+AgNO3": { text: "🧱 Mg(NO3)2 + Ag" },
   "Al+AgNO3": { text: "🧱 Al(NO3)3 + Ag" },
+  "Cu+AgNO3": { text: "🧱 Cu(NO3)2 + 2Ag" },
+  "CuSO4+K": { text: "🧱 K2SO4 + Cu" },
+  "CuSO4+Na": { text: "🧱 Na2SO4 + Cu" },
+  "CuSO4+Al": { text: "🧱 Al2(SO4)3 + Cu" },
+  "CuSO4+Zn": { text: "🧱 ZnSO4 + Cu" },
+  "CuSO4+Fe": { text: "🧱 FeSO4 + Cu" },
+  "CuSO4+Mg": { text: "🧱 MgSO4 + Cu" },
+  "FeCl2+K": { text: "🧱 KCl + Fe" },
+  "FeCl2+Mg": { text: "🧱 MgCl2 + Fe" },
+  "FeCl2+Zn": { text: "🧱 ZnCl2 + Fe" },
+  "FeCl2+Na": { text: "🧱 NaCl + Fe" },
+  "CuCl2+Fe": { text: "🧱 FeCl2 + Cu" },
+  "CuCl2+Mg": { text: "🧱 MgCl2 + Cu" },
+  "CuCl2+Zn": { text: "🧱 ZnCl2 + Cu" },
+  "CuCl2+Al": { text: "🧱 AlCl3 + Cu" },
+  "CuCl2+K": { text: "🧱 KCl + Cu" },
+  "CuCl2+Na": { text: "🧱 NaCl + Cu" },
 
   // ===== MUỐI + ACID =====
   "BaCl2+H2SO4": { text: "BaSO4 ↓ + 2HCl", color: "#ffffff" },
   "Na2CO3+HCl": { text: "💨 CO2 ↑ + H2O + NaCl", gas: true },
   "Na2CO3+CH3COOH": { text: "💨 CO2 ↑ + H2O + CH3COONa", gas: true },
   "H2SO4+Na2CO3": { text: "💨 CO2 ↑ + H2O + Na2SO4", gas: true },
+  "AgNO3+HCl": { text: "AgCl ↓ + HNO3", color: "#ffffff" },
 
   // ===== MUỐI + MUỐI =====
   "AgNO3+NaCl": { text: "AgCl ↓", color: "#ffffff" },
   "AgNO3+BaCl2": { text: "AgCl ↓ + Ba(NO3)2", color: "#ffffff" },
+  "AgNO3+FeCl2": { text: "2AgCl ↓ + Fe(NO3)2", color: "#ffffff" },
+  "AgNO3+CuCl2": { text: "2AgCl ↓ + Cu(NO3)2", color: "#ffffff" },
   "BaCl2+Na2SO4": { text: "BaSO4 ↓", color: "#eeeeee" },
-  "CuCl2+NaOH": { text: "Cu(OH)2 ↓", color: "#66ccff" },
+  "BaCl2+CuSO4": { text: "BaSO4 ↓ + CuCl2", color: "#ffffff" },
 
+  // ===== KIM LOẠI + BASE ====
+  "Al+NaOH": { text: "💨 NaAlO2 + H2 ↑", gas: true },
+  "Al+Ba(OH)2": { text: "💨 Ba(AlO2)2 + H2 ↑", gas: true },
+  
   // ===== MUỐI + BASE =====
   "FeCl2+NaOH": { text: "Fe(OH)2 ↓", color: "#66ff66" },
   "CuSO4+Ba(OH)2": { text: "⬇️⬇️ Cu(OH)2 + BaSO4", color: "#66ccff" },
