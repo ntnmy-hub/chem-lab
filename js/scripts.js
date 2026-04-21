@@ -43,14 +43,20 @@ const reactions = {
   // ===== KIM LOẠI + MUỐI =====
   "Fe+CuCl2": { text: "🧱 FeCl2 + Cu" },
   "Zn+CuSO4": { text: "🧱 ZnSO4 + Cu" },
+  "Fe+AgNO3": { text: "🧱 Fe(NO3)2 + Ag" },
+  "Zn+AgNO3": { text: "🧱 Zn(NO3)2 + Ag" },
+  "Mg+AgNO3": { text: "🧱 Mg(NO3)2 + Ag" },
+  "Al+AgNO3": { text: "🧱 Al(NO3)3 + Ag" },
 
   // ===== MUỐI + ACID =====
   "BaCl2+H2SO4": { text: "BaSO4 ↓ + 2HCl", color: "#ffffff" },
   "Na2CO3+HCl": { text: "💨 CO2 ↑ + H2O + NaCl", gas: true },
   "Na2CO3+CH3COOH": { text: "💨 CO2 ↑ + H2O + CH3COONa", gas: true },
+  "H2SO4+Na2CO3": { text: "💨 CO2 ↑ + H2O + Na2SO4", gas: true },
 
   // ===== MUỐI + MUỐI =====
   "AgNO3+NaCl": { text: "AgCl ↓", color: "#ffffff" },
+  "AgNO3+BaCl2": { text: "⬇️ AgCl ↓ + Ba(NO3)2", color: "#ffffff" },
   "BaCl2+Na2SO4": { text: "⬇️ BaSO4 ↓", color: "#eeeeee" },
   "CuCl2+NaOH": { text: "⬇️ Cu(OH)2 ↓", color: "#66ccff" },
 
@@ -58,6 +64,10 @@ const reactions = {
   "FeCl2+NaOH": { text: "⬇️ Fe(OH)2 ↓", color: "#66ff66" },
   "CuSO4+Ba(OH)2": { text: "⬇️⬇️ Cu(OH)2 + BaSO4", color: "#66ccff" },
   "CuSO4+NaOH": { text: "⬇️ Cu(OH)2 ↓", color: "#66ccff" },
+  "Ba(OH)2+Na2SO4": { text: "⬇️ BaSO4 ↓ + 2NaOH", color: "#ffffff" },
+  "Ba(OH)2+FeCl2": { text: "⬇️ Fe(OH)2 ↓ + BaCl2", color: "#66ff66" },
+  "Ba(OH)2+CuCl2": { text: "⬇️ Cu(OH)2 ↓ + BaCl2", color: "#66ccff" },
+  "CuCl2+NaOH": { text: "⬇️ Cu(OH)2 ↓ + 2NaCl", color: "#66ccff" },
 
 };
 
