@@ -11,6 +11,7 @@ const reactions = {
   // ===== TRUNG HÒA =====
   "Ba(OH)2+H2SO4": { text: "BaSO4 ↓ + 2H2O", color: "#ffffff"},
   "HCl+NaOH": { text: "NaCl + H2O", color: "#00e5ff" },
+  "HCl+Ba(OH)2": { text: "BaCl2 + 2H2O" },
   "CH3COOH+NaOH": { text: " CH3COONa + H2O" },
   "H2SO4+NaOH": { text: " Na2SO4 + 2H2O" },
   "Ba(OH)2+CH3COOH": { text: "(CH3COO)2Ba + 2H2O" },
