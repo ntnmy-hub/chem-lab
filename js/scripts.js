@@ -181,7 +181,6 @@ function showGasEffect() {
 
 function toggleGroup(title) {
   const group = title.nextElementSibling;
-  document.querySelectorAll('.group').forEach(g => { if (g !== group) g.classList.remove('active'); });
   group.classList.toggle('active');
 }
 

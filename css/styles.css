@@ -15,9 +15,9 @@ left: 0;
 width: 100vw;
 height: 100vh;
 object-fit: cover;
-object-position: 70% center; /* Chỉnh góc quay đẹp nhất theo code Foldcraft */
-z-index: -1; /* Quan trọng: Đẩy video xuống lớp dưới cùng */
-opacity: 1; /* Làm mờ video một chút để hóa chất nổi bật hơn */
+object-position: 70% center; 
+z-index: -1; 
+opacity: 1; 
 }
 
 .bg-icons span { position: absolute; font-size: 24px; animation: float 10s linear infinite; opacity: 0.7; }
@@ -35,7 +35,6 @@ h2 { text-align: center; margin-top: 20px; }
 .col-side { width: 30%; max-height: 80vh; overflow-y: auto; padding: 0 10px;}
 .col-center { width: 40%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
 
-/* ỐNG NGHIỆM LỚN SVG CHÍNH GIỮA */
 .tube-container { position: relative; width: 100px; height: 300px; margin: 0 auto; display: flex; justify-content: center;}
 .tube-container svg { position: relative; z-index: 2; width: 100%; height: 100%; }
   
@@ -52,7 +51,6 @@ h2 { text-align: center; margin-top: 20px; }
 .group { display: none; }
 .group.active { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 10px; }
   
-/* ===== HIỆU ỨNG KÍNH MỜ (GLASSMORPHISM) ===== */
 .section, #result {
   background: rgba(255, 255, 255, 0.05) !important;
   backdrop-filter: blur(12px) !important;
@@ -75,10 +73,9 @@ h2 { text-align: center; margin-top: 20px; }
   color: #00e5ff !important;
 }
 
-/* ===== CSS MỚI CHO CÁC BÌNH TAM GIÁC NHỎ ===== */
 .flask {
   position: relative;
-  width: 60px; /* Độ rộng ảnh SVG bình tam giác */
+  width: 60px; 
   height: 80px;
   margin: 15px auto 35px auto;
   cursor: pointer;
@@ -87,18 +84,15 @@ h2 { text-align: center; margin-top: 20px; }
   justify-content: center;
 }
 
-/* ===== CSS ĐÃ SỬA CHO LỚP CHẤT LỎNG ===== */
 .flask-liquid {
   position: absolute;
-  bottom: 15px; /* Chỉnh thông số này cao/thấp để khớp với đáy bình SVG của bạn */
+  bottom: 15px; 
   left: 15%;    
-  width: 70%;   /* Độ rộng của chất lỏng ở phần đáy */
+  width: 70%;   
   height: 35%;
   background: linear-gradient(to top, #00e5ff, #2196f3);
   z-index: 1;
   
-/* Dùng clip-path để cắt hình chữ nhật thành hình thang (đáy rộng, đỉnh hẹp) */
-/* Các thông số bên dưới cũng tạo một chút vát ở góc đáy cho đỡ nhọn */
   clip-path: polygon(30% 0%, 70% 0%, 100% 85%, 85% 100%, 15% 100%, 0% 85%);
   
   transition: background 0.3s;
@@ -111,8 +105,6 @@ h2 { text-align: center; margin-top: 20px; }
   width: 100%;
   height: 100%;
   pointer-events: none;
-  
-/* Bộ lọc này sẽ biến màu đen (hoặc bất kỳ màu gì) thành màu trắng sáng */
   filter: brightness(0) invert(1); 
 }
 
@@ -126,13 +118,11 @@ h2 { text-align: center; margin-top: 20px; }
 
 .flask:hover { transform: scale(1.1); }
   
-/* ===== CẬP NHẬT LẠI HIỆU ỨNG KHI ĐƯỢC CHỌN (BỊ ẢNH HƯỞNG BỞI BỘ LỌC) ===== */
 .flask.selected .flask-liquid {
   background: linear-gradient(to top, #eec5f3, #a914ff);
 }
 
 .flask.selected .flask-svg {
-/* Giữ nguyên màu trắng và thêm hiệu ứng đổ bóng viền phát sáng */
   filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(255, 165, 214, 0.9));
 }
 
